@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 2px;
+  padding: 0;
+}
+
+body {
+  background-image: url("../../assets/img/img_background.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+ul {
+  list-style-type: none;
+  display: table-cell;
+  vertical-align: middle;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+//Mise en forme de chaques cartes Personnage/Armes
+.carte {
+  text-align: center;
+  margin: 4rem auto;
+
+  .radio-container {
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background: $color-3;
+    border-radius: 20px;
+    padding: 10px;
+    color: $white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.452);
+
+    input {
+      transform: translateY(1px);
+    }
+
+    label {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 1.3rem;
+    border: 3px solid $color-1;
+    outline: none;
+    transition: 0.4s;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 20px;
+
+    &:focus {
+      background: $color-1;
+      border-radius: 4px;
+      color: $white;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.card {
+  transition: 0.3s;
+  width: 15rem;
+  border-radius: 10px;
+  padding-top: 10px;
+  height: 350px;
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    border: solid;
+  }
+}
+
+.infos {
+  margin-top: 10px;
+}
+
+.card#Pyro {
+  background: rgb(255, 126, 40);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.669) 20%,
+    rgb(223, 34, 34) 85%
+  );
+}
+
+.card#Anemo {
+  background: rgb(40, 255, 208);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.669) 20%,
+    rgba(40, 255, 160, 0.9) 85%
+  );
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.card#Cryo {
+  background: rgb(197, 238, 245);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.669) 20%,
+    rgba(131, 234, 240, 0.9) 85%
+  );
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.card#Dendro {
+  background: rgb(182, 255, 170);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.669) 20%,
+    rgba(119, 219, 134, 0.9) 85%
+  );
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.card#Electro {
+  background: rgb(200, 115, 233);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.669) 20%,
+    rgba(183, 110, 235, 0.9) 85%
+  );
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.card#Geo {
+  background: rgb(200, 115, 233);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.669) 20%,
+    rgba(255, 153, 0, 0.9) 97%
+  );
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.card#Hydro {
+  background: rgb(200, 115, 233);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.669) 20%,
+    rgba(0, 203, 255, 0.9) 85%
+  );
+  width: 15rem;
+  border-radius: 10px;
+}
+
+// CSS des logo de pouvoirs dans la carte
+.Vision {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.5) 30%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+//CSS des cartes des armes
+.card#rarity1 {
+  background: rgb(79,88,100);
+  background: linear-gradient(159deg, rgba(79,88,100,0.68) 26%, rgba(131,143,153,1) 55%);
+}
+.card#rarity2 {
+  background: rgb(72,87,92);
+  background: linear-gradient(159deg, rgba(72,87,92,0.68) 26%, rgba(94,150,108,1) 80%);
+}
+.card#rarity3 {
+  background: rgb(81,84,116);
+  background: linear-gradient(159deg, rgba(81,84,116,0.68) 26%, rgba(73,159,179,1) 79%); 
+}
+.card#rarity4 {
+  background: rgb(89,84,130);
+  background: linear-gradient(159deg, rgba(89,84,130,0.68) 26%, rgba(184,134,202,1) 79%); 
+}
+.card#rarity5 {
+  background: rgb(105,84,83);
+  background: linear-gradient(159deg, rgba(105,84,83,0.68) 26%, rgba(230,172,84,1) 79%); 
+}

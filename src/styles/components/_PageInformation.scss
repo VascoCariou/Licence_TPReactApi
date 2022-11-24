@@ -1,0 +1,50 @@
+// CSS de la page des informations supplémentaires
+
+// CSS des cartes personnage
+
+img#Pyro {
+  background-color: rgb(219, 117, 117);
+  width: auto;
+  height: 50rem;
+}
+
+img#Cryo {
+  background-color: rgb(168, 211, 231);
+  width: auto;
+  height: 50rem;
+}
+
+img#Dendro {
+  background-color: rgb(149, 235, 156);
+  width: auto;
+  height: 50rem;
+}
+
+img#Geo {
+  background-color: rgb(221, 210, 148);
+  width: auto;
+  height: 50rem;
+}
+
+img#Anemo {
+  background-color: rgb(110, 217, 231);
+  width: auto;
+  height: 50rem;
+}
+
+img#Hydro {
+  background-color: rgb(91, 125, 199);
+  width: auto;
+  height: 50rem;
+}
+
+img#Electro {
+  background-color: rgb(162, 98, 168);
+  width: auto;
+  height: 50rem;
+}
+
+// Séparation des différents <ul> dans la page /information_personnage/<NomPersonnage>
+ul.information-personnage {
+  padding: 1rem;
+}
