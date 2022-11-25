@@ -5,6 +5,8 @@ import HomeArmes from "./Pages/HomeArmes";
 import HomePersonnage from "./Pages/HomePersonnage";
 
 function App() {
+
+  //test commit
   return (
     <BrowserRouter>
       <Routes>
