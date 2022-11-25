@@ -79,9 +79,6 @@ const InformationPersonnage = (props) => {
           />
         </ul>
       </li>
-      <li>
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-      </li>
     </div>
   );
 };
