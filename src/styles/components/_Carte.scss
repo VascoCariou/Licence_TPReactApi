@@ -6,7 +6,7 @@
 
 body {
   background-image: url("../../assets/img/img_background.jpg");
-  background-size:cover;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -176,22 +176,42 @@ ul {
 
 //CSS des cartes des armes
 .card#rarity1 {
-  background: rgb(79,88,100);
-  background: linear-gradient(159deg, rgba(79,88,100,0.68) 26%, rgba(131,143,153,1) 55%);
+  background: rgb(79, 88, 100);
+  background: linear-gradient(
+    159deg,
+    rgba(79, 88, 100, 0.68) 26%,
+    rgba(131, 143, 153, 1) 55%
+  );
 }
 .card#rarity2 {
-  background: rgb(72,87,92);
-  background: linear-gradient(159deg, rgba(72,87,92,0.68) 26%, rgba(94,150,108,1) 80%);
+  background: rgb(72, 87, 92);
+  background: linear-gradient(
+    159deg,
+    rgba(72, 87, 92, 0.68) 26%,
+    rgba(94, 150, 108, 1) 80%
+  );
 }
 .card#rarity3 {
-  background: rgb(81,84,116);
-  background: linear-gradient(159deg, rgba(81,84,116,0.68) 26%, rgba(73,159,179,1) 79%); 
+  background: rgb(81, 84, 116);
+  background: linear-gradient(
+    159deg,
+    rgba(81, 84, 116, 0.68) 26%,
+    rgba(73, 159, 179, 1) 79%
+  );
 }
 .card#rarity4 {
-  background: rgb(89,84,130);
-  background: linear-gradient(159deg, rgba(89,84,130,0.68) 26%, rgba(184,134,202,1) 79%); 
+  background: rgb(89, 84, 130);
+  background: linear-gradient(
+    159deg,
+    rgba(89, 84, 130, 0.68) 26%,
+    rgba(184, 134, 202, 1) 79%
+  );
 }
 .card#rarity5 {
-  background: rgb(105,84,83);
-  background: linear-gradient(159deg, rgba(105,84,83,0.68) 26%, rgba(230,172,84,1) 79%); 
+  background: rgb(105, 84, 83);
+  background: linear-gradient(
+    159deg,
+    rgba(105, 84, 83, 0.68) 26%,
+    rgba(230, 172, 84, 1) 79%
+  );
 }

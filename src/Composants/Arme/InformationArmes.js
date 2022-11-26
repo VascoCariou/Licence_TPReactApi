@@ -79,7 +79,6 @@ const InformationArmes = (props) => {
       <li>
         <ul className="information-personnage">
           <h1>Type d'arme : {infoArmes.type}</h1>
-          
         </ul>
         <ul className="information-personnage">
           <h1>Titre : {infoArmes.passiveName}</h1>

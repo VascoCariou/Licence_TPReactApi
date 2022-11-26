@@ -31,11 +31,11 @@ const InformationPersonnage = (props) => {
 
   const getParamURL = async () => {
     if (nomPersonnage != undefined) {
-    await axios    
-      .get(`https://api.genshin.dev/characters/${nomPersonnage}`)
-      .then((res) => {
-        setInfoPersonnage(res.data);
-      });
+      await axios
+        .get(`https://api.genshin.dev/characters/${nomPersonnage}`)
+        .then((res) => {
+          setInfoPersonnage(res.data);
+        });
     }
   };
 
