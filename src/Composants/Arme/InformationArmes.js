@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Navigation from "../../Pages/Navigation";
 
-const InformationArmes = (props) => {
+const InformationArmes = () => {
   const [infoArmes, setInfoArmes] = useState([]);
   const { nomArmes } = useParams();
 
@@ -63,7 +63,8 @@ const InformationArmes = (props) => {
 
   useEffect(() => {
     getProducts();
-  });
+    // eslint-disable-next-line
+  }, [nomArmes]);
 
   const getProducts = async () => {
     await axios
