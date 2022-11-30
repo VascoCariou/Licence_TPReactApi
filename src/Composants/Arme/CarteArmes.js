@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const CarteArmes = ({ nomArmes }) => {
   const [infoArmes, setInfoArmes] = useState([]);
+  infoArmes.rarity = undefined;
 
   function formatationarmes(str) {
     if (str === "apprentice-s-notes") {
@@ -60,17 +61,17 @@ const CarteArmes = ({ nomArmes }) => {
   }
 
   useEffect(() => {
-    axios.get(`https://api.genshin.dev/weapons/${nomArmes}`).then((res) => {
+    nomArmes && axios.get(`https://api.genshin.dev/weapons/${nomArmes}`).then((res) => {
       setInfoArmes(res.data);
     });
   }, [nomArmes]);
 
   return (
     <Link to={`/information_arme/${nomArmes}`}>
-      <li className="card" id={"rarity" + infoArmes.rarity}>
+      <li className="card" id={"rarity" + infoArmes.rarity && infoArmes.rarity}>
         <div className="infos">
-          <h2>{infoArmes.name}</h2>
-          <h2>Type : {infoArmes.type}</h2>
+          <h2>{infoArmes.name && infoArmes.name}</h2>
+          <h2>Type : {infoArmes.type && infoArmes.type}</h2>
           <img
             src={`https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/weapons/${formatationarmes(
               nomArmes
