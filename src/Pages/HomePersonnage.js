@@ -3,13 +3,13 @@ import Personnage from "../Composants/Personnage/Personnage";
 import Navigation from "./Navigation";
 
 const HomePersonnage = () => {
-  return (
-    <div>
-      <Navigation />
+    return (
+        <div>
+            <Navigation/>
 
-      <Personnage />
-    </div>
-  );
+            <Personnage/>
+        </div>
+    );
 };
 
 export default HomePersonnage;

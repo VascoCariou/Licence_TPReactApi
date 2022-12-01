@@ -1,10 +1,9 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
-const CarteArmes = ({ nomArmes }) => {
+const CarteArmes = ({nomArmes}) => {
   const [infoArmes, setInfoArmes] = useState([]);
-  infoArmes.rarity = undefined;
 
   function formatationarmes(str) {
     if (str === "apprentice-s-notes") {
@@ -61,22 +60,23 @@ const CarteArmes = ({ nomArmes }) => {
   }
 
   useEffect(() => {
-    nomArmes && axios.get(`https://api.genshin.dev/weapons/${nomArmes}`).then((res) => {
-      setInfoArmes(res.data);
-    });
+
+      axios.get(`https://api.genshin.dev/weapons/${nomArmes}`).then((res) => {
+        setInfoArmes(res.data);
+      });
   }, [nomArmes]);
 
   return (
     <Link to={`/information_arme/${nomArmes}`}>
-      <li className="card" id={"rarity" + infoArmes.rarity && infoArmes.rarity}>
+      <li className="card" id={"rarity" + infoArmes.rarity}>
         <div className="infos">
           <h2>{infoArmes.name && infoArmes.name}</h2>
           <h2>Type : {infoArmes.type && infoArmes.type}</h2>
           <img
-            src={`https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/weapons/${formatationarmes(
-              nomArmes
-            )}.png?strip=all&quality=100&w=208`}
-            alt=""
+              src={`https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/weapons/${formatationarmes(
+                  nomArmes
+              )}.png?strip=all&quality=100&w=208`}
+              alt=""
           />
         </div>
       </li>

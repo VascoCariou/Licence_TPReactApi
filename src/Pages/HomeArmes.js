@@ -3,13 +3,13 @@ import Armes from "../Composants/Arme/Armes";
 import Navigation from "./Navigation";
 
 const HomeArmes = () => {
-  return (
-    <div>
-      <Navigation />
+    return (
+        <div>
+            <Navigation/>
 
-      <Armes />
-    </div>
-  );
+            <Armes/>
+        </div>
+    );
 };
 
 export default HomeArmes;

@@ -34,7 +34,7 @@ ul {
     border-radius: 20px;
     padding: 10px;
     color: $white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.452);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
 
     input {
       transform: translateY(1px);
@@ -92,18 +92,18 @@ ul {
 .card#Pyro {
   background: rgb(255, 126, 40);
   background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.669) 20%,
-    rgb(223, 34, 34) 85%
+                  circle,
+                  rgba(255, 255, 255, 0.669) 20%,
+                  rgb(223, 34, 34) 85%
   );
 }
 
 .card#Anemo {
   background: rgb(40, 255, 208);
   background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.669) 20%,
-    rgba(40, 255, 160, 0.9) 85%
+                  circle,
+                  rgba(255, 255, 255, 0.669) 20%,
+                  rgba(40, 255, 160, 0.9) 85%
   );
   width: 15rem;
   border-radius: 10px;
@@ -112,9 +112,9 @@ ul {
 .card#Cryo {
   background: rgb(197, 238, 245);
   background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.669) 20%,
-    rgba(131, 234, 240, 0.9) 85%
+                  circle,
+                  rgba(255, 255, 255, 0.669) 20%,
+                  rgba(131, 234, 240, 0.9) 85%
   );
   width: 15rem;
   border-radius: 10px;
@@ -123,9 +123,9 @@ ul {
 .card#Dendro {
   background: rgb(182, 255, 170);
   background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.669) 20%,
-    rgba(119, 219, 134, 0.9) 85%
+                  circle,
+                  rgba(255, 255, 255, 0.669) 20%,
+                  rgba(119, 219, 134, 0.9) 85%
   );
   width: 15rem;
   border-radius: 10px;
@@ -134,9 +134,9 @@ ul {
 .card#Electro {
   background: rgb(200, 115, 233);
   background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.669) 20%,
-    rgba(183, 110, 235, 0.9) 85%
+                  circle,
+                  rgba(255, 255, 255, 0.669) 20%,
+                  rgba(183, 110, 235, 0.9) 85%
   );
   width: 15rem;
   border-radius: 10px;
@@ -145,9 +145,9 @@ ul {
 .card#Geo {
   background: rgb(200, 115, 233);
   background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.669) 20%,
-    rgba(255, 153, 0, 0.9) 97%
+                  circle,
+                  rgba(255, 255, 255, 0.669) 20%,
+                  rgba(255, 153, 0, 0.9) 97%
   );
   width: 15rem;
   border-radius: 10px;
@@ -156,9 +156,9 @@ ul {
 .card#Hydro {
   background: rgb(200, 115, 233);
   background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.669) 20%,
-    rgba(0, 203, 255, 0.9) 85%
+                  circle,
+                  rgba(255, 255, 255, 0.669) 20%,
+                  rgba(0, 203, 255, 0.9) 85%
   );
   width: 15rem;
   border-radius: 10px;
@@ -168,9 +168,9 @@ ul {
 .Vision {
   background: rgb(0, 0, 0);
   background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.5) 30%,
-    rgba(255, 255, 255, 0) 70%
+                  circle,
+                  rgba(0, 0, 0, 0.5) 30%,
+                  rgba(255, 255, 255, 0) 70%
   );
 }
 
@@ -178,40 +178,44 @@ ul {
 .card#rarity1 {
   background: rgb(79, 88, 100);
   background: linear-gradient(
-    159deg,
-    rgba(79, 88, 100, 0.68) 26%,
-    rgba(131, 143, 153, 1) 55%
+                  159deg,
+                  rgba(79, 88, 100, 0.68) 26%,
+                  rgba(131, 143, 153, 1) 55%
   );
 }
+
 .card#rarity2 {
   background: rgb(72, 87, 92);
   background: linear-gradient(
-    159deg,
-    rgba(72, 87, 92, 0.68) 26%,
-    rgba(94, 150, 108, 1) 80%
+                  159deg,
+                  rgba(72, 87, 92, 0.68) 26%,
+                  rgba(94, 150, 108, 1) 80%
   );
 }
+
 .card#rarity3 {
   background: rgb(81, 84, 116);
   background: linear-gradient(
-    159deg,
-    rgba(81, 84, 116, 0.68) 26%,
-    rgba(73, 159, 179, 1) 79%
+                  159deg,
+                  rgba(81, 84, 116, 0.68) 26%,
+                  rgba(73, 159, 179, 1) 79%
   );
 }
+
 .card#rarity4 {
   background: rgb(89, 84, 130);
   background: linear-gradient(
-    159deg,
-    rgba(89, 84, 130, 0.68) 26%,
-    rgba(184, 134, 202, 1) 79%
+                  159deg,
+                  rgba(89, 84, 130, 0.68) 26%,
+                  rgba(184, 134, 202, 1) 79%
   );
 }
+
 .card#rarity5 {
   background: rgb(105, 84, 83);
   background: linear-gradient(
-    159deg,
-    rgba(105, 84, 83, 0.68) 26%,
-    rgba(230, 172, 84, 1) 79%
+                  159deg,
+                  rgba(105, 84, 83, 0.68) 26%,
+                  rgba(230, 172, 84, 1) 79%
   );
 }
