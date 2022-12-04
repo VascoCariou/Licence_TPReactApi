@@ -21,6 +21,10 @@ ul {
   }
 }
 
+ul#AffichageVision {
+  text-align: center;
+}
+
 //Mise en forme de chaques cartes Personnage/Armes
 .carte {
   text-align: center;
@@ -76,7 +80,7 @@ ul {
   width: 15rem;
   border-radius: 10px;
   padding-top: 10px;
-  height: 350px;
+  height: 380px;
 
   &:hover {
     transform: scale(1.2);

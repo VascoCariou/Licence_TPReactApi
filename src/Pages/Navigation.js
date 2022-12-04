@@ -17,6 +17,14 @@ const Navigation = () => {
                 >
                     <li>Les armes</li>
                 </NavLink>
+
+
+                <NavLink
+                    to="/favoris"
+                    className={(nav) => (nav.isActive ? "nav-active" : " ")}
+                >
+                    <li>Les cartes favorites</li>
+                </NavLink>
             </ul>
         </div>
     );
