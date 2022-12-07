@@ -29,11 +29,11 @@
         background: $color-1;
         position: absolute;
         border-radius: 10px;
-        bottom: 0px;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         -webkit-animation: anim 0.3s ease forwards;
-        animation: anim 0.6s ease forwards;
+        animation: anim 0.2s ease forwards;
 
         @-webkit-keyframes anim {
           to {

@@ -1,4 +1,5 @@
 import {useSelector} from "react-redux";
+import FiltreFavoris from "./filtreFavoris";
 
 const FavorisEnTete = () => {
     const favoris = useSelector(state => state.todo)
@@ -7,6 +8,8 @@ const FavorisEnTete = () => {
             <p>
                 Nombre de favoris : <strong>{favoris.length}</strong>
             </p>
+
+            <FiltreFavoris />
         </div>
     );
 };

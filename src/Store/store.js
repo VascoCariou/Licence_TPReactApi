@@ -21,6 +21,12 @@ const favorisCarte = createSlice({
         supprimerFavoris: (state, action) => {
             state = state.filter(t => t.text !== action.payload)
             return state
+        },
+
+        miseajourFavoris: (state, action) => {
+            let stateFiltre = state;
+            stateFiltre = stateFiltre.filter(t => t.type_carte !== action.payload)
+            return stateFiltre
         }
     }
 })
@@ -30,4 +36,4 @@ export const store = configureStore({
     }
 })
 
-export const {ajouterFavorisPersonnage, ajouterFavorisArme, supprimerFavoris} = favorisCarte.actions
+export const {ajouterFavorisPersonnage, ajouterFavorisArme, supprimerFavoris, miseajourFavoris} = favorisCarte.actions
