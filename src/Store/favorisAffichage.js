@@ -3,6 +3,7 @@ import axios from "axios";
 import {useDispatch} from "react-redux";
 import {supprimerFavoris} from "./store";
 import {formatationArme, formatationPersonnage} from "../Composants/formatation";
+
 const FavorisAffichage = (props) => {
 
     const [infoCarte, setInfoCarte] = useState([]);
@@ -98,7 +99,7 @@ const FavorisAffichage = (props) => {
         );
     } else {
         <ul>
-            Un problème est arrivé ! Il n'y a pas de favoris
+            Un problème est arrivé !
         </ul>
     }
 };

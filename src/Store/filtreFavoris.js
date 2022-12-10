@@ -1,24 +1,40 @@
 import React from 'react';
 import {miseajourFavoris} from "./store";
-import {useDispatch} from "react-redux";
+import {connect, useDispatch} from "react-redux";
+import {selecteurFiltre} from "./SelecteurFiltre";
 
-const FiltreFavoris = () => {
-
-    const dispatch = useDispatch();
-
-    const handleClick = event => {
-        event.preventDefault()
-
-        dispatch(miseajourFavoris(event.target.value))
-    };
+export const FiltreFavoris = () => {
+    const dispatch = useDispatch()
 
     return (
         <div>
-            <button onClick={handleClick} value={null}>Aucun filtre</button>
-            <button onClick={handleClick} value="personnage">Cartes de personnages</button>
-            <button onClick={handleClick} value="arme">Cartes d'armes</button>
-        </div>
-    )
-};
+            <input
+                type="button"
+                onClick={() => dispatch(miseajourFavoris("pasdefiltre"))}
+                value="aucun filtre"
+            />
 
+            <input
+                type="button"
+                onClick={() => dispatch(miseajourFavoris("personnage"))}
+                value="Personnages"
+            />
+
+            <input
+                type="button"
+                onClick={() => dispatch(miseajourFavoris("arme"))}
+                value="Armes"
+            />
+        </div>
+    );
+};
 export default FiltreFavoris;
+
+export const TodoFilterStore = connect(
+    state => ({
+        value: selecteurFiltre(state)
+    }),
+    dispatch => ({
+        onChange: (value) => dispatch(miseajourFavoris(value))
+    })
+)(FiltreFavoris)

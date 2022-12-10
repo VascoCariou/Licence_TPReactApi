@@ -1,6 +1,8 @@
 import {configureStore, createSlice} from "@reduxjs/toolkit";
+import filtreFavoris from "./filtreFavoris";
 
 const favorisCarte = createSlice({
+
     name: "favori",
     initialState: [],
     reducers: {
@@ -24,16 +26,25 @@ const favorisCarte = createSlice({
         },
 
         miseajourFavoris: (state, action) => {
-            let stateFiltre = state;
-            stateFiltre = stateFiltre.filter(t => t.type_carte !== action.payload)
-            return stateFiltre
+            switch (action.payload) {
+                case("personnage"):
+                    state = state.filter(carte => carte.type_carte.includes(action.payload));
+                    return state
+
+                case("arme"):
+                    return state.filter(carte => carte.type_carte === action.payload)
+
+                default:
+                    return state
+            }
         }
     }
 })
 export const store = configureStore({
     reducer: {
         todo: favorisCarte.reducer
-    }
+    },
+    filter: filtreFavoris
 })
 
 export const {ajouterFavorisPersonnage, ajouterFavorisArme, supprimerFavoris, miseajourFavoris} = favorisCarte.actions
